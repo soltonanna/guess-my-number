@@ -1,2 +1,2 @@
-// eslint-disable-next-line no-console
-console.log(window);
+const myName = 'anahit';
+console.log(myName);
