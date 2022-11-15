@@ -1,0 +1,16 @@
+** npm init -y **
+
+------- ESLINT -------
+** npm i --save-dev eslint **
+** npm i --save-dev eslint-config-airbnb **
+** npm i --save-dev prettier eslint-plugin-prettier eslint-config-prettier **
+** npm i --save-dev eslint-plugin-html **
+** npm i --save-dev eslint-plugin-import **
+---/ in root folder create files '.eslintrc' and '.eslintignore' /---
+
+
+------- GIT -------
+** git init **
+** npm install -D gh-pages **
+---/ in root folder create file '.gitignore' /---
+** npm i --save-dev husky lint-staged **
