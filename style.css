@@ -1,6 +1,128 @@
-body{
-    background-color: #000000;
+* {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0; padding: 0;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
+
+body {
+    background: #282626;
+}
+
+#main {
+    width: 50vw;
+    margin: 10% auto 0;
+    padding: 30px;
+    color:#fff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 25px #3c3a3a;
+}
+
+#main.win {
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-size: 300% 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #282626;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-size: 300% 100%;
+    
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;   
+}
+
+#main.win .btn {
+    border: 1px solid #fff
+}
+
+.btn:hover {
+    background-position: 100% 0;
+    
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+#between {
+    font-size: 15px;
+}
+
 h1 {
+    margin: 30px auto 100px;
+    text-align: center;
+}
+
+#guessed-number {
+    position: relative;
+    text-align: center;
+    border-top: 3px solid #ffffff;
+}
+
+#number {
+    position: absolute;
+    top: -60px; left: 43%;
+    background-color: #fff;
+    width: 130px; height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #282626;
+    font-size: 18px;
+}
+
+#game-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 0 50px;
+}
+
+#game-block #left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#game-block #left input {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    margin-bottom: 15px;
     color: #ffffff;
+    padding: 10px; 
+}
+
+#game-block #right {
+    width: 40%;
+    font-size: 15px;
+}
+
+#game-block #right p:nth-child(1) { 
+    margin-bottom: 35px;
+}
+
+#game-block #right p {
+    margin-bottom: 20px;
 }
