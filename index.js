@@ -1,2 +1,1 @@
-const myName = 'anahit';
-console.log(myName);
+console.log('hello first script');
