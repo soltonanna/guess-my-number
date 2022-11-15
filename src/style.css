@@ -1,6 +1,98 @@
-body{
-    background-color: #000000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
 }
+
+#main {
+    background: #000;
+    width: 50vw;
+    margin: 0 auto;
+    padding: 30px;
+    color:#fff;
+}
+
+#main.win {
+    background: green;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: #000;
+}
+
+#between {
+    font-size: 15px;
+}
+
 h1 {
-    color: #ffffff;
+    margin: 30px auto 100px;
+    text-align: center;
+}
+
+#guessed-number {
+    position: relative;
+    text-align: center;
+    border-top: 3px solid #fff;
+}
+
+#number {
+    position: absolute;
+    top: -60px; left: 43%;
+    background-color: #fff;
+    width: 130px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 18px;
+}
+
+#game-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    padding: 100px 0 50px;
+}
+
+#game-block #left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#game-block #left input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 10px; 
+}
+
+#game-block #right {
+    width: 40%;
+    font-size: 15px;
+}
+
+#game-block #right p:nth-child(1) { 
+    margin-bottom: 35px;
+}
+
+#game-block #right p {
+    margin-bottom: 20px;
 }

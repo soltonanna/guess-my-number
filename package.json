@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "deploy": "gh-pages -d src",

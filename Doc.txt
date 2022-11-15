@@ -13,4 +13,6 @@
 ** git init **
 ** npm install -D gh-pages **
 ---/ in root folder create file '.gitignore' /---
-** npm i --save-dev husky lint-staged **
+
+** npx husky-init && npm install **
+** npx husky set .husky/pre-commit "npm run lint" **
