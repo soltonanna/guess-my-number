@@ -1,2 +1,1 @@
-// eslint-disable-next-line no-console
-console.log(window);
+console.log('hello first script');
