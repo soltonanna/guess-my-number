@@ -11,8 +11,18 @@
 
 ------- GIT -------
 ** git init **
-** npm install -D gh-pages **
 ---/ in root folder create file '.gitignore' /---
+---/ create repository in github with project name /---
+** git add . **
+** git commit -m "add default files" **
+** git remote add origin https://github.com/soltonanna/guess-my-number.git ** 
+** git push origin master **
+
+
+** npm install -D gh-pages **
+---/ in root folder create folder 'src' where put all project files. !IMPORTANT file 'index.html' /---
+---/ create new branch in github called 'gh-pages' /---
+---/ add script in 'package.json' file /---
 
 ** npx husky-init && npm install **
 ** npx husky set .husky/pre-commit "npm run lint" **
