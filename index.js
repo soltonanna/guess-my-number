@@ -58,7 +58,7 @@ buttonCheck.addEventListener('click', (e)=> {
                 const jsConfetti = new JSConfetti();
                 jsConfetti.addConfetti();
 
-                gameMessages.textContent = `Currect Number!!`;
+                gameMessages.textContent = `Correct Number!!`;
                 guessedNumber.textContent = secretNumber;
                 secretNumber = Math.floor( ( Math.random() * 20 ));
             

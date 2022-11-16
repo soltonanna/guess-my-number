@@ -8,11 +8,11 @@
 }
 
 body {
-    background: url('../media/guess.jpg') no-repeat center;
+    background: url('media/guess.jpg') no-repeat center;
     background-size: cover;
 }
 body.win {
-    background: url('../media/win.webp') no-repeat center;
+    background: url('media/win.webp') no-repeat center;
     background-size: cover;
 }
 
@@ -24,11 +24,6 @@ body.win {
     border-radius: 5px;
     border: 1px solid #477e9c;
     background-color: #ffffff6d;
-}
-
-#main.win {
-    /* background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
-    background-size: 300% 100%; */
 }
 
 #header {
