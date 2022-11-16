@@ -21,3 +21,9 @@ npm init
 ```sh
 npm start
 ```
+
+
+Don't forget install live-server, if you haven't it
+```sh
+npm install -g live-server
+```
