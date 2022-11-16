@@ -1,6 +1,7 @@
 'use strict';
 
 /** Get Elements from DOM */
+const body = document.querySelector("body");
 const main = document.querySelector("#main");
 
 const buttonAgain = document.querySelector(".btn.again");
@@ -28,6 +29,7 @@ buttonAgain.addEventListener('click', (e)=> {
     checkInput.value = "";
     scoreTxt.textContent = 10;
     main.classList.remove("win");
+    body.classList.remove("win");
 });
 
 /** Check the value */
@@ -37,23 +39,29 @@ buttonCheck.addEventListener('click', (e)=> {
     if ( inputValidation(checkInput.value) ) {
         if ( score > 1 ) {
             if ( +checkInput.value > secretNumber ) {
-                gameMessages.textContent = `⬆️ Too high.`;
+                gameMessages.textContent = `Too high.`;
                 score--; 
                 scoreTxt.textContent = score;
                 main.classList.remove("win");
             } 
             else if ( +checkInput.value < secretNumber ) {
-                gameMessages.textContent = `⬇️ Too low.`;
+                gameMessages.textContent = `Too low.`;
                 score--; 
                 scoreTxt.textContent = score;
                 main.classList.remove("win");
             } 
             else if ( +checkInput.value === secretNumber ) {
-                gameMessages.textContent = `🎉 Currect Number!!`;
-                guessedNumber.textContent = secretNumber;
-                secretNumber = Math.floor( ( Math.random() * 20 ));
+                body.classList.add("win");
                 main.classList.add("win");
 
+                // eslint-disable-next-line no-undef
+                const jsConfetti = new JSConfetti();
+                jsConfetti.addConfetti();
+
+                gameMessages.textContent = `Currect Number!!`;
+                guessedNumber.textContent = secretNumber;
+                secretNumber = Math.floor( ( Math.random() * 20 ));
+            
                 if ( score > highscore ) {
                     highscore = score;
                     highscoreTxt.textContent = highscore;
